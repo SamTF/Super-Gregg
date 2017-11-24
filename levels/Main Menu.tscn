@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://scripts/UI.gd" type="Script" id=1]
+[ext_resource path="res://fonts/ankecallig-fg.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://sprites/Background.png" type="Texture" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+
+font/size = 100
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 2 )
+
+[node name="Main Menu" type="Node2D"]
+
+[node name="UI" type="Control" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+script/script = ExtResource( 1 )
+
+[node name="Title" type="Label" parent="UI"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 14.0
+margin/right = 602.0
+margin/bottom = 178.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.162964, 0.695313, 0.171282, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Doodle DD"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="TextureButton" type="TextureButton" parent="UI"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="Background" type="Sprite" parent="."]
+
+transform/pos = Vector2( -33, 1024 )
+transform/rot = 90.0
+z/z = -10
+texture = ExtResource( 3 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+

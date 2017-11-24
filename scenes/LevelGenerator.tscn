@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://scripts/LevelGenerator.gd" type="Script" id=1]
+
+[node name="LevelGenerator" type="Node"]
+
+script/script = ExtResource( 1 )
+numPlatforms = 200
+levelWidth = 350
+levelStart = 100
+minY = 40
+maxY = 50
+
+
